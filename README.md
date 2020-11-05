@@ -18,6 +18,7 @@ After a while I discovered that the most suitable way for me is to join
 ```
 
 3. After a while you should get **latex2html_via_tex4ht.html**
+4. In **latex2html_via_tex4ht.html** prepend "*by hand*" paths to figure files by "./"
 
 ### Remark
 
