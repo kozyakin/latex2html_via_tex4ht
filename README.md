@@ -13,9 +13,9 @@ After a while I discovered that the most suitable way for me is to join
 1. Create a temporary directory and put there all the files from directory **latex2html_via_tex4ht**
 2. Run the command
 
-```
-   my_make4ht+include_css+more_selective_cleaning.bat latex2html_via_tex4ht.tex  
-```
+    ```
+    my_make4ht+include_css+more_selective_cleaning.bat latex2html_via_tex4ht.tex  
+    ```
 
 3. After a while you should get **latex2html_via_tex4ht.html**
 4. In **latex2html_via_tex4ht.html** prepend "*by hand*" paths to figure files by "./"
