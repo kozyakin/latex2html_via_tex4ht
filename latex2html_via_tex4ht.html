@@ -3,8 +3,8 @@
 <head>
    <title>My notes on how to use Tex4ht+MathJax</title> 
 <meta charset='utf-8' /> 
-<meta name='generator' content='TeX4ht (https://tug.org/tex4ht/)' /> 
-<meta name='viewport' content='width=device-width,initial-scale=1' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
  
 <style type='text/css'> 
 <!--   
@@ -128,13 +128,15 @@ h2.titleHead{text-align:center;}
 div.maketitle{ margin-bottom: 2em; }  
 div.author, div.date {text-align:center;}  
 div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }  
-.abstract p {margin-left:5%; margin-right:5%;}  
+div.abstract p {margin-left:5%; margin-right:5%;}  
 div.abstract {width:100%;}  
+.abstracttitle{text-align:center;margin-bottom:1em;}  
 figure.float, div.figure {margin-left: auto; margin-right: auto;}  
 figure.float img, figure.figure img {display: block; margin-left: auto; margin-right: auto;}  
 figure.figure > p {text-align:center;}  
 figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}  
 figcaption.caption span.id{font-weight: bold; white-space: nowrap; }  
+.abstract{margin:1em;}  
 .equation td{text-align:center; }  
 .equation-star td{text-align:center; }  
 table.equation-star { width:100%; }  
@@ -158,9 +160,9 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
  
  --> 
 </style> 
-<meta name='src' content='latex2html_via_tex4ht.tex' /> 
+<meta content='latex2html_via_tex4ht.tex' name='src' /> 
 <script>window.MathJax = { tex: { tags: "ams", inlineMath: [ ["\\\(","\\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams'] }, loader: { load: ['[tex]/color', '[tex]/ams'] } }; </script> 
- <script id='MathJax-script' type='text/javascript' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' async='async'></script>  
+ <script async='async' type='text/javascript' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js'></script>  
  <script> window.MathJax = { tex: { tags: "ams", inlineMath: [ ["\\\(","\\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams', 'boldsymbol', 'newcommand', 'verb'] }, loader: { load: ['[tex]/color', '[tex]/ams', '[tex]/boldsymbol', '[tex]/newcommand', '[tex]/verb'] } }; </script> 
 </head><body>
    <div class='maketitle'>
@@ -173,7 +175,7 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
 
 <h2 class='titleHead'>My notes on how to use Tex4ht+MathJax</h2>
 <div class='author'><span class='cmr-12'>Victor Kozyakin</span></div><br />
-<div class='date'><span class='cmr-12'>December 21, 2020</span></div>
+<div class='date'><span class='cmr-12'>January 25, 2021</span></div>
    </div>
    <h3 class='sectionHead'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Call Command</h3>
 <!-- l. 24 --><p class='noindent'>My problem was to make a HTML ﬁle with plenty of mathematics from a LaTeX one. As a beginner, I
