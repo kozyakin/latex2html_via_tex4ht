@@ -1,6 +1,6 @@
 # latex2html_via_tex4ht
 
-Being a novice, my problem was to make a HTML file with plenty of mathematics from a LaTeX one. As a beginner, I immediately faced the following problems:
+Being a novice, my problem was to make an HTML file with plenty of mathematics from a LaTeX one. As a beginner, I immediately faced the following problems:
 
 * How to run Tex4ht to get HTML file with mathematics?
 * What to do to make proper referencing of mathematical formulas?
@@ -14,7 +14,7 @@ After a while I discovered that the most suitable way for me is to join
 1. Create a temporary directory and put there all the files from directory **latex2html_via_tex4ht**
 2. Run the command
 
-    ```cmd
+    ```shell
     my_make4ht+include_css+more_selective_cleaning.bat latex2html_via_tex4ht.tex  
     ```
 
