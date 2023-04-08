@@ -93,6 +93,8 @@ table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
 .hline td, .cline td{ padding: 0; }  
 .hline hr, .cline hr{border:none;border-top:1px solid black;}  
 .hline {border-top: 1px solid black;}  
+.hline + .vspace:last-child{display:none;}  
+.hline:first-child{border-bottom:1px solid black;border-top:none;}  
 .tabbing-right {text-align:right;}  
 div.float, div.figure {margin-left: auto; margin-right: auto;}  
 div.float img {text-align:center;}  
@@ -123,6 +125,7 @@ div.caption span.id{font-weight: bold; white-space: nowrap; }
 h1.partHead{text-align: center}  
 p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }  
 p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }  
+.subsubsectionHead, .likesubsubsectionHead { font-size: 1em; }  
 .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}  
 .subparagraphHead, .likesubparagraphHead { font-weight: bold;}  
 .verse{white-space:nowrap; margin-left:2em}  
@@ -178,7 +181,7 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
 
 <h2 class='titleHead'>My notes on how to use Tex4ht+MathJax</h2>
 <div class='author'><span class='cmr-12'>Victor Kozyakin</span></div><br />
-<div class='date'><span class='cmr-12'>August 30, 2022</span></div>
+<div class='date'><span class='cmr-12'>March 30, 2023</span></div>
    </div>
    <h3 class='sectionHead' id='call-command'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Call Command</h3>
 <!-- l. 24 --><p class='noindent'>My problem was to make a HTML ﬁle with plenty of mathematics from a LaTeX one. As a beginner, I immediately faced the following problems: </p>
@@ -279,7 +282,7 @@ b&amp;=0\label{B}
 Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{A}$-\eqref{B}.
 </pre>
 <!-- l. 120 --><p class='nopar'> we obtain the following output:
-</p><!-- l. 125 --><p class='indent'>   \begin {equation}  \boldsymbol {f}(x)=1\label {eq}  \end {equation}
+</p><!-- l. 125 --><p class='indent'>   \begin {equation}  \boldsymbol {f}(x)=1\label {eq}  \end {equation}<a id='x1-2001r1'></a>
 </p><!-- l. 129 --><p class='indent'>   \[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]
 </p><!-- l. 131 --><p class='indent'>   Here, the reference to <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\tag{OneIsNotOne Condition}</span></span></span> in previous equation is as follows: \(\mathrm {(\ref {E:mycond})}\)
 </p><!-- l. 137 --><p class='indent'>   \begin {align}  a&amp;=1\label {A}\\ b&amp;=0\label {B}  \end {align}
@@ -317,6 +320,15 @@ Example of references: we have equation \eqref{eq} from Sec. \ref{S1}.�
 
                                                                                                                                                                                                                                                                                                                                                                                                                            
    </figure>
+<!-- l. 211 --><p class='indent'>   Citation example: <span class='cite'>[<a href='#XNDKKP:DSS96'>1</a>]</span>
+</p>
+   <h3 class='likesectionHead' id='references'><a id='x1-4000'></a>References</h3>
+<!-- l. 18 --><p class='noindent'>
+   </p><div class='thebibliography'>
+   <p class='bibitem'><span class='biblabel'>
+ [1]<span class='bibsp'>   </span></span><a id='XNDKKP:DSS96'></a>Al-Nayef A., Diamond P., Kloeden P. et al. Bi-shadowing and delay equations // Dynam. Stability Systems. 1996. Vol. 11, no. 2. P. 121–134.
+</p>
+   </div>
     
 </body> 
 </html>
