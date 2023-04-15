@@ -35,31 +35,31 @@ process \verb|test.tex| file:
 
 {\small
 \begin{verbatim}
-make4ht -sc myconfig.cfg test.tex "0,mathjax,p-indent,charset=utf-8" " -cunihtf -utf8"
+make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 \end{verbatim}}
 \noindent and after that, if one wants to embed into resulted
 \verb|test.html| the css-file \verb|test.css| generated during previous
 command, one should issue one the following command {\small
 \begin{verbatim}
-htlatex test.tex "myconfig,html,0,mathjax,p-indent,charset=utf-8,css-in" " -cunihtf -utf8"
+htlatex test.tex "myconfig" " -cunihtf -utf8"
 \end{verbatim}
-\noindent or
+\noindent or once more
 \begin{verbatim}
-make4ht -sc myconfig.cfg -m draft test.tex "0,mathjax,p-indent,charset=utf-8,css-in" " -cunihtf -utf8"
+make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 \end{verbatim}}
 \noindent where the config file \verb|myconfig.cfg| is as
 follows
 
 {\small
 \begin{verbatim}
-\Preamble{xhtml,fn-in}
+\Preamble{xhtml,html5,0,mathjax,p-indent,charset=utf-8,css-in,fn-in}
+\textwidth=2160pt
 
-\Css{body { margin:5\% 5\%; max-width:72em; ine-height:1.6; font-size:large;
-    padding:0 40px;}}
+\Css{body { margin:5\% 5\%; max-width:72em; font-size:large; padding:0 40px;}}
 \Css{p.indent {text-indent:1.5em;}}
 \Css{.columns-3 p.indent {text-indent:0em;}}
-\Css{p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em;
-    margin-bottom:0em; background:\#F0F0F0; color:\#000000;}}
+\Css{p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-bottom:0em;
+    background:\#F0F0F0; color:\#000000;}}
 
 \Configure{@HEAD}{\HCode{
 <script>

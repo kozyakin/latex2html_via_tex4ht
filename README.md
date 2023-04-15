@@ -15,7 +15,7 @@ After a while I discovered that the most suitable way for me is to join
 2. Run the command
 
     ```shell
-    my_make4ht+include_css+cleaning.cmd latex2html_via_tex4ht.tex  
+    make4ht+include_css+cleaning.cmd
     ```
 
 3. After a while you should get **latex2html_via_tex4ht.html**
