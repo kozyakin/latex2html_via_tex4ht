@@ -6,7 +6,7 @@
 * Что надо сделать для надлежащих ссылок на математические формулы?
 * Как вставить рисунки TikZ?
 
-Через некоторое время я обнаружил, что наиболее простой и подходящий способ для этого &mdash; "соединить" 
+Через некоторое время я обнаружил, что наиболее простой и подходящий способ для этого &mdash; "соединить"
 **Tex4ht** c **MatJax**. Пример преобразования TeX-файла с множеством математики в HTML приводится здесь.
 
 ## Создание HTML
@@ -23,15 +23,11 @@
 
 4. В **latex2html_via_tex4ht.html** допишите *руками*" в начале путей к рисункам символы "./"
 
-### Замечание
+## Замечание
 
 Описанная процедура не создает файл **latex2html_via_tex4ht.pdf**. Если Вы хотите создать файл **latex2html_via_tex4ht.pdf**, запустите обычную компиляцию TeX-файла с помощью программы **PDFLaTeX**.
 
-
-
 ---
-
-
 
 Being a novice, my problem was to make an HTML file with plenty of mathematics from a LaTeX one. As a beginner, I immediately faced the following problems:
 
@@ -54,6 +50,6 @@ After a while I discovered that the most suitable way for me is to join
 3. After a while you should get **latex2html_via_tex4ht.html**
 4. In **latex2html_via_tex4ht.html** prepend "*by hand*" paths to figure files by "./"
 
-### Remark
+## Remark
 
 Described procedure does not create **latex2html_via_tex4ht.pdf** file. If you want to create **latex2html_via_tex4ht.pdf**, run usual **PDFLaTeX** procedure.
