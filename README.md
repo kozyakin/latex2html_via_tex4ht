@@ -15,7 +15,7 @@
 
 2. Выполните (в терминале или командной строке) коману
 
-   ```shell
+   ```sh
    make4ht+include_css+cleaning.cmd
    ```
 
@@ -43,7 +43,7 @@ After a while I discovered that the most suitable way for me is to join
 1. Create a temporary directory and put there all the files from directory **latex2html_via_tex4ht**
 2. Run the command
 
-    ```shell
+    ```sh
     make4ht+include_css+cleaning.cmd
     ```
 
