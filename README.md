@@ -1,8 +1,8 @@
 # latex2html via tex4ht
 
-В какой-то момент у меня возник вопрос, как создать HTML файл с математическими формулами из файла  LaTeX. будучи новичном в данном вопросе, я немедленно столкнулся со следующими вопросами:
+Однажды мне потребовалось конвертировать LaTeX-файл с математическими формулами в HTML-файл. Будучи новичном в данном предмете, я немедленно столкнулся со следующими вопросами:
 
-* Как запустить Tex4ht, чтобы получить HTML файл с матеатикой?
+* Как запустить Tex4ht, чтобы получить HTML файл с математикой?
 * Что надо сделать для надлежащих ссылок на математические формулы?
 * Как вставить рисунки TikZ?
 
@@ -13,7 +13,7 @@
 
 1. Создайте временную папку и скопируйте в нее все файлы из папки **latex2html_via_tex4ht**
 
-2. Выполните (в терминале или командной строке) коману
+2. Выполните (в терминале или командной строке) команду
 
    ```sh
    make4ht+include_css+cleaning.cmd
@@ -21,7 +21,7 @@
 
 3. Через некоторое время Вы получите файл **latex2html_via_tex4ht.html**
 
-4. В **latex2html_via_tex4ht.html** допишите *руками*" в начале путей к рисункам символы "./"
+4. В **latex2html_via_tex4ht.html** допишите "*руками*" в начале путей к рисункам символы "./"
 
 ## Замечание
 
@@ -29,7 +29,7 @@
 
 ---
 
-Being a novice, my problem was to make an HTML file with plenty of mathematics from a LaTeX one. As a beginner, I immediately faced the following problems:
+Once I needed to convert a LaTeX file with mathematical formulas into an HTML file. As a beginner, I immediately faced the following problems:
 
 * How to run Tex4ht to get HTML file with mathematics?
 * What to do to make proper referencing of mathematical formulas?
