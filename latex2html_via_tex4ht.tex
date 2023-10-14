@@ -150,39 +150,41 @@ following lines, before TikZ package loading:
 
 Below is an example of using TikZ.
 
+\usetikzlibrary{backgrounds}
 \begin{figure}[!hbt]
   \center
-  \begin{tikzpicture}[auto,>=latex',node font=\small]
+  \begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle,
+  auto,>=latex',node font=\small]
     \pgfmathsetmacro{\a}{15}
     %
     \begin{scope}[xscale=0.5, yscale=2.0]
       \pgfmathsetmacro{\s}{2}
       \coordinate (S) at ({cos(\a)*\s},{sin(-\a)*\s});
       \coordinate (SS) at ({cos(\a)*\s},{sin(\a)*\s});
-      \draw[fill=blue!5, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
-      \path (SS) node[left] {$H_{1}S$};
+      \draw[fill=blue!10, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
+      \path (SS) node[color=blue,left] {$H_{1}S$};
     \end{scope}
     %
     \begin{scope}[xscale=-0.5, yscale=-2.0]
       \pgfmathsetmacro{\s}{2}
       \coordinate (S) at ({cos(\a)*\s},{sin(-\a)*\s});
       \coordinate (SS) at ({cos(\a)*\s},{sin(\a)*\s});
-      \draw[fill=blue!5, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
-      \path (SS) node[below] {$H_{1}\tilde{S}$};
+      \draw[fill=blue!10, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
+      \path (SS) node[color=blue,below] {$H_{1}\tilde{S}$};
     \end{scope}
     %
     \pgfmathsetmacro{\s}{2}
     \coordinate (S) at ({cos(\a)*\s},{sin(-\a)*\s});
     \coordinate (SS) at ({cos(\a)*\s},{sin(\a)*\s});
-    \draw[fill=blue!2, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
-    \path (SS) node[below left,xshift=0.66ex] {$S$};
+    \draw[fill=blue!5, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
+    \path (SS) node[color=blue,below left,xshift=0.66ex] {$S$};
     %
     \begin{scope}[scale=-1.0]
       \pgfmathsetmacro{\s}{2}
       \coordinate (S) at ({cos(\a)*\s},{sin(-\a)*\s});
       \coordinate (SS) at ({cos(\a)*\s},{sin(\a)*\s});
-      \draw[fill=blue!2, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
-      \path (SS) node[above right,xshift=-0.66ex] {$\tilde{S}$};
+      \draw[fill=blue!5, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
+      \path (SS) node[color=blue,above right,xshift=-0.66ex] {$\tilde{S}$};
     \end{scope}
     %
     \begin{scope}[xscale=0.5, yscale=2.0]
@@ -196,14 +198,14 @@ Below is an example of using TikZ.
       \coordinate (S) at ({cos(\a)*\s},{sin(-\a)*\s});
       \draw[densely dashed, line width=0.3pt] (S) arc [start angle=-\a, end angle=\a, radius=\s];
     \end{scope}
-    \draw[->] (-\s-0.5,0) -- (\s+0.5,0) node[label={[xshift=-0.5em,yshift=-0.66ex]$x$}] {};
-    \draw[->] (0,-\s-0.5) -- (0,\s+0.5) node[label={[xshift=0.66em,yshift=-4ex]$y$}] {};
+    \draw[->] (-\s-0.5,0) -- (\s+0.5,0) node[label={[color=red,xshift=-0.5em,yshift=-0.66ex]$x$}] {};
+    \draw[->] (0,-\s-0.5) -- (0,\s+0.5) node[label={[color=red,xshift=0.66em,yshift=-4ex]$y$}] {};
     %
     \draw[dashed] (0,0) circle [radius=\s];
-    \node[above left] at (0,\s) {$1$};
-    \node[below left] at (0,-\s) {$-1$};
-    \node[below right] at (\s,0) {$1$};
-    \node[below left] at (-\s,0) {$-1$};
+    \node[color=black,above left] at (0,\s) {$1$};
+    \node[color=black,below left] at (0,-\s) {$-1$};
+    \node[color=black,below right] at (\s,0) {$1$};
+    \node[color=black,below left] at (-\s,0) {$-1$};
   \end{tikzpicture}
   \caption{Example of Stanford}
 \end{figure}
