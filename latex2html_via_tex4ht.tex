@@ -154,7 +154,7 @@ Below is an example of using TikZ.
 \begin{figure}[!hbt]
   \center
   \begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle,
-  auto,>=latex',node font=\small]
+  every node/.style={text=blue},auto,>=latex',node font=\small]
     \pgfmathsetmacro{\a}{15}
     %
     \begin{scope}[xscale=0.5, yscale=2.0]
@@ -162,7 +162,7 @@ Below is an example of using TikZ.
       \coordinate (S) at ({cos(\a)*\s},{sin(-\a)*\s});
       \coordinate (SS) at ({cos(\a)*\s},{sin(\a)*\s});
       \draw[fill=blue!10, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
-      \path (SS) node[color=blue,left] {$H_{1}S$};
+      \path (SS) node[left] {$H_{1}S$};
     \end{scope}
     %
     \begin{scope}[xscale=-0.5, yscale=-2.0]
@@ -170,21 +170,21 @@ Below is an example of using TikZ.
       \coordinate (S) at ({cos(\a)*\s},{sin(-\a)*\s});
       \coordinate (SS) at ({cos(\a)*\s},{sin(\a)*\s});
       \draw[fill=blue!10, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
-      \path (SS) node[color=blue,below] {$H_{1}\tilde{S}$};
+      \path (SS) node[below] {$H_{1}\tilde{S}$};
     \end{scope}
     %
     \pgfmathsetmacro{\s}{2}
     \coordinate (S) at ({cos(\a)*\s},{sin(-\a)*\s});
     \coordinate (SS) at ({cos(\a)*\s},{sin(\a)*\s});
     \draw[fill=blue!5, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
-    \path (SS) node[color=blue,below left,xshift=0.66ex] {$S$};
+    \path (SS) node[below left,xshift=0.66ex] {$S$};
     %
     \begin{scope}[scale=-1.0]
       \pgfmathsetmacro{\s}{2}
       \coordinate (S) at ({cos(\a)*\s},{sin(-\a)*\s});
       \coordinate (SS) at ({cos(\a)*\s},{sin(\a)*\s});
       \draw[fill=blue!5, line width=0.3pt] (SS) to (0,0) to (S) arc [start angle=-\a, end angle=\a, radius=\s];
-      \path (SS) node[color=blue,above right,xshift=-0.66ex] {$\tilde{S}$};
+      \path (SS) node[above right,xshift=-0.66ex] {$\tilde{S}$};
     \end{scope}
     %
     \begin{scope}[xscale=0.5, yscale=2.0]
