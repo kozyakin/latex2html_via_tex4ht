@@ -5,9 +5,9 @@
 \usepackage{a4wide}
 
 % This is to tune using tiks with tex4ht
-\ifdefined\HCode
-   \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
-\fi
+\ifdefined\HCode%
+   \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}%
+\fi%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,positioning,fit}
@@ -126,9 +126,9 @@ Tex4th supports TikZ, however, for correct displaying text and math symbols
 in TikZ picture, it is needed to put in the preamble of tex file the
 following lines, before TikZ package loading:
 \begin{verbatim}
-\ifdefined\HCode
-   \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
-\fi
+\ifdefined\HCode%
+   \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}%
+\fi%
 \end{verbatim}
 
 Below is an example of using TikZ.
