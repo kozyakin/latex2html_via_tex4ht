@@ -893,7 +893,7 @@ FUNCTION {output.bibitem}
 {
   newline$
   "\backrefparscanfalse" write$ newline$    %% added
-  "\bibitem" "{" * write$
+  "\bibitem{" write$
   cite$ write$
   "}" write$
   newline$
