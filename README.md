@@ -13,10 +13,11 @@
 
 1. Создайте временную папку и скопируйте в нее все файлы из папки **latex2html_via_tex4ht**
 
-2. Выполните (в терминале или командной строке) команду
+2. Выполните (в терминале или командной строке) одну из команд
 
    ```sh
-   make4ht+include_css+cleaning.cmd
+   make4ht+inject_css_js+cleaning.cmd
+   make4ht+inject_css_pl+cleaning.cmd
    ```
 
 3. Через некоторое время Вы получите файл **latex2html_via_tex4ht.html**
@@ -41,10 +42,11 @@ After a while I discovered that the most suitable way for me is to join
 ## Generating HTML
 
 1. Create a temporary directory and put there all the files from directory **latex2html_via_tex4ht**
-2. Run the command
+2. Run one of the following commands
 
     ```sh
-    make4ht+include_css+cleaning.cmd
+    make4ht+inject_css_js+cleaning.cmd
+    make4ht+inject_css_pl+cleaning.cmd
     ```
 
 3. After a while you should get **latex2html_via_tex4ht.html**
