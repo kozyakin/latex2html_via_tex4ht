@@ -37,9 +37,9 @@ del /S /Q /F *.bbl >nul 2>&1
 del /S /Q /F *.blg >nul 2>&1
 del /S /Q /F %~n1.html >nul 2>&1
 del /S /Q /F %~n1.css >nul 2>&1
-echo pdflatex.exe -draftmode --shell-escape %infile%
+echo make4ht.exe -s -m draft %infile%
 echo.
-pdflatex.exe -draftmode --shell-escape %infile% >nul
+make4ht.exe -s -m draft %infile% "myconfig,charset=utf-8" " -cunihtf -utf8"
 echo.
 echo Creating %~n1.bbl file
 echo.
