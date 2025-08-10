@@ -13,7 +13,7 @@
 
 * **TexLive** или **MikTex** (или любая другая система **TeX**)
 * **Perl**, доступный для всех пользователей (т.е. добавленный в системный **PATH**)
-* **tidy** (программа чистки HTML кода), доступная для всех пользователей (т.е. установленная и добавленная в системный **PATH**); может быть загружена с сайта [HTML Tidy](https://www.html-tidy.org/) или [htacg/tidy-html5](https://github.com/htacg/tidy-html5)
+* **HTML tidy** (программа чистки HTML кода), доступная для всех пользователей (т.е. установленная и добавленная в системный **PATH**); может быть загружена с сайта [HTML Tidy](https://www.html-tidy.org/) или [htacg/tidy-html5](https://github.com/htacg/tidy-html5)
 * **Node.js** (среда выполнения **JavaScript**) с дополнительно установлеными модулями **purifycss** и **cleancss**
 
 ## Создание HTML
@@ -50,7 +50,7 @@ After a while I discovered that the most suitable way for me is to join
 
 * **TexLive** or **MikTex** (or any other **TeX** system)
 * **Perl**, available to all users (i.e. added to the system **PATH**)
-* **tidy** (HTML cleaner), available to all users (i.e. installed and added to the system **PATH**); can be downloaded from [HTML Tidy](https://www.html-tidy.org/) or [htacg/tidy-html5](https://github.com/htacg/tidy-html5)
+* **HTML tidy** (HTML cleaner), available to all users (i.e. installed and added to the system **PATH**); can be downloaded from [HTML Tidy](https://www.html-tidy.org/) or [htacg/tidy-html5](https://github.com/htacg/tidy-html5)
 * **Node.js** (JavaScript runtime) with the **purifycss** and **cleancss** modules additionally installed
 
 ## Generating HTML
