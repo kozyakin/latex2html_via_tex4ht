@@ -21,16 +21,13 @@
 \ifdefined\HCode\relax
 \else
 %
-%\DocumentMetadata{pdfstandard=a-3b,lang=en}%
+%\DocumentMetadata{pdfstandard=a-3b}%
 \RequirePackage{pdfmanagement}
-\SetKeys[document/metadata]{pdfstandard=a-3b,lang=en}
+\SetKeys[document/metadata]{pdfstandard=a-3b}
 \fi
 \documentclass{article}
-%
-\usepackage{amsmath,amssymb,amsthm}% Must be before fontsetup
-\usepackage[default,varnothing]{fontsetup}%
-\setmathfont{NewCMMath-Book}[StylisticSet=1,CharacterVariant=1]%
-\setmathfont[version=bold]{NewCMMath-Bold}%
+\usepackage{lmodern}
+\usepackage{amsmath,amsthm}% Must be before fontsetup
 \usepackage{lualatex-math}% Must be after all math font declarations
 \usepackage[english]{babel}
 \usepackage{a4wide}
